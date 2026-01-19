@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Page Example</title>
+<script> 
+
+function showMessage() {let name = prompt("Enter your name:");
+document.getElementById("msg").innerHTML = "Welcome, " + name + "!";}
+    
+</script>
+</head>
+<body onload="showMessage()">
+    <h2>Dynamic Content Example</h2>
+    <p id="msg"></p>
+</body>
+</html>

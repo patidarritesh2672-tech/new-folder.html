@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt Form</title>
+<script>
+        function fillFirst() {
+            let fname = prompt("Enter First Name:");
+            if (fname !== null) {
+                document.getElementById("firstName").value = fname;
+            }
+        }
+
+        function fillLast() {
+            let lname = prompt("Enter Last Name:");
+            if (lname !== null) {
+                document.getElementById("lastName").value = lname;
+            }
+        }
+    </script>
+    
+
+</head>
+<body>
+
+    <h2>Enter Name Using Prompt</h2>
+
+    First Name:  
+    <input type="text" id="firstName" readonly onclick="fillFirst()"><br><br>
+
+    Last Name:  
+    <input type="text" id="lastName" readonly onclick="fillLast()"><br><br>
+    <input type="button" value="Enter Names" onclick="enterNames()">
+
+
+</body>
+</html>
